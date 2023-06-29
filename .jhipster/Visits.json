@@ -1,0 +1,16 @@
+{
+  "applications": "*",
+  "entityTableName": "visits",
+  "fields": [
+    {
+      "fieldName": "visitDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Visits",
+  "relationships": []
+}

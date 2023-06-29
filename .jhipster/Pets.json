@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "entityTableName": "pets",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Pets",
+  "relationships": [
+    {
+      "otherEntityName": "petsType",
+      "relationshipName": "petsType",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "visits",
+      "relationshipName": "visits",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ]
+}

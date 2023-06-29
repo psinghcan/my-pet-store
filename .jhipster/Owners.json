@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "entityTableName": "owners",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateProvince",
+      "fieldType": "StateProvince",
+      "fieldValues": "AL,IN,NJ,NY,ON,AB"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "Country",
+      "fieldValues": "USA,CANADA"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Owners",
+  "relationships": [
+    {
+      "otherEntityName": "pets",
+      "relationshipName": "pets",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ]
+}
