@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "entityTableName": "app_users",
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "String"
+    }
+  ],
+  "name": "AppUsers",
+  "relationships": [
+    {
+      "otherEntityName": "appRoles",
+      "relationshipName": "appRoles",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ]
+}

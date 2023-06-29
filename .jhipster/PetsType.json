@@ -1,0 +1,12 @@
+{
+  "applications": "*",
+  "entityTableName": "pets_type",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "PetsType",
+  "relationships": []
+}

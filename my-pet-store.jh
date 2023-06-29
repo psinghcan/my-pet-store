@@ -1,0 +1,76 @@
+
+entity Vets {
+    firstName String,
+    lastName String
+}
+
+entity Specialities {
+    name String
+}
+
+relationship ManyToMany {
+	Vets{Specialities} to Specialities
+}
+
+relationship OneToMany {
+	Owners{Pets} to Pets
+}
+
+relationship OneToOne {
+	Pets{PetsType} to PetsType
+}
+
+relationship OneToMany {
+	Pets{Visits} to Visits
+}
+
+relationship OneToMany {
+	AppUsers{AppRoles} to AppRoles
+}
+
+relationship OneToMany {
+	Vets{Visits} to Visits
+}
+
+
+entity Owners {
+    firstName String,
+    lastName String,
+    address String, 
+    city String,
+    stateProvince StateProvince,
+    country Country,
+    phone String    
+}
+
+enum StateProvince {
+    AL, IN, NJ, NY, ON, AB
+}
+
+enum Country {
+    USA, CANADA
+}
+
+entity Pets {
+    name String,
+    birthDate Instant       
+}
+
+entity PetsType {
+    name String
+}
+
+entity Visits {
+    visitDate Instant,
+    description String
+}
+
+entity AppUsers {
+    username String,
+    password String,
+    enabled String
+}
+
+entity AppRoles {
+    username String    
+}

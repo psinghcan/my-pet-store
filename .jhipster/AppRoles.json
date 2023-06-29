@@ -1,0 +1,12 @@
+{
+  "applications": "*",
+  "entityTableName": "app_roles",
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String"
+    }
+  ],
+  "name": "AppRoles",
+  "relationships": []
+}

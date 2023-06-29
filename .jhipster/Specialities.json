@@ -1,0 +1,12 @@
+{
+  "applications": "*",
+  "entityTableName": "specialities",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Specialities",
+  "relationships": []
+}

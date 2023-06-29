@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "entityTableName": "vets",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Vets",
+  "relationships": [
+    {
+      "otherEntityName": "visits",
+      "relationshipName": "visits",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "specialities",
+      "relationshipName": "specialities",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ]
+}
